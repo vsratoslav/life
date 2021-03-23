@@ -1,0 +1,36 @@
+<!doctype html>
+<html dir="ltr" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Бактерия</title>
+    <link rel="stylesheet" href="life.css">
+    <style></style>
+</head>
+<body>
+    <div class="full-wrapper">
+        <div class="title">
+            <span>Игра жизнь</span>
+        </div>
+        <div class="start-params">
+            <div>
+                <label for="surface-size">Размер поля</label>
+                <input type="number" id="surface-size"/>
+            </div>
+            <div>
+                <label for="surface-delay">Задержка, мс</label>
+                <input type="number" id="surface-delay"/>
+            </div>
+        </div>
+        <div class="header-buttons">
+            <button id="draw">Построить поле</button>
+            <button id="start">Старт</button>
+            <button id="stop">Стоп</button>
+            <button id="clean">Очистить</button>
+        </div>
+        <div class="life-surface">
+        </div>
+    </div>
+
+    <script src="life.js"></script>
+</body>
+</html>

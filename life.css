@@ -36,7 +36,6 @@ body {
     background: #cef2fa;
 }
 
-
 .title span{
     font-weight: bold;
     font-size: 30px;
@@ -74,6 +73,9 @@ button:hover{
 #draw{
     background-color: peachpuff;
 }
+#generation{
+    background-color: darkolivegreen;
+}
 .full-wrapper .life-surface{
     min-width: 700px;
     max-width: 700px;
@@ -84,25 +86,25 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    z-index: 10;
 }
 .surface-row{
-    margin: 1px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #5041b2;
+    z-index: 10;
 }
 .cell{
-    margin: 1px;
-    min-height: 3px;
-    min-width: 3px;
     width: 100%;
     height: 100%;
     background-color: #cef2fa;
+    z-index: 99;
 }
 .cell[cell-state = '1']{
     background-color: #800e61;
+    color: white;
+    font-size: large;
 }

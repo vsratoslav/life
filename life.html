@@ -14,18 +14,19 @@
         <div class="start-params">
             <div>
                 <label for="surface-size">Размер поля</label>
-                <input type="number" id="surface-size"/>
+                <input type="number" placeholder="число от 10 до 2000" id="surface-size"/>
             </div>
             <div>
                 <label for="surface-delay">Задержка, мс</label>
-                <input type="number" id="surface-delay"/>
+                <input type="number" placeholder="по умолчанию 300 мс" id="surface-delay"/>
             </div>
         </div>
         <div class="header-buttons">
-            <button id="draw">Построить поле</button>
-            <button id="start">Старт</button>
-            <button id="stop">Стоп</button>
-            <button id="clean">Очистить</button>
+            <button disabled = "true" id="draw">Построить поле</button>
+            <button disabled = "true" id="generation">Одно поколение</button>
+            <button disabled = "true" id="start">Старт</button>
+            <button disabled = "true" id="stop">Стоп</button>
+            <button disabled = "true" id="clean">Очистить</button>
         </div>
         <div class="life-surface">
         </div>
